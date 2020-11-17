@@ -1,0 +1,55 @@
+﻿<Properties StartupConfiguration="{B52BC904-6C58-41C0-8EA1-F46819EB4C17}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BLEPractice.Core/App.cs">
+    <Files>
+      <File FileName="BLEPractice.Droid/MainActivity.cs" Line="26" Column="7" />
+      <File FileName="BLEPractice.Implementation/Class1.cs" />
+      <File FileName="BLEPractice.Core/App.cs" Line="23" Column="61" />
+      <File FileName="BLEPractice.Core/ViewModels/MainPageViewModel.cs" Line="18" Column="6" />
+      <File FileName="BLEPractice.Core/ViewModels/BaseNavigationViewModel.cs" />
+      <File FileName="BLEPractice.Droid/Setup.cs" Line="24" Column="6" />
+      <File FileName="BLEPractice.Droid/Views/MainActivityView.cs" Line="22" Column="59" />
+      <File FileName="BLEPractice.Droid/Views/BaseView.cs" Line="38" Column="45" />
+      <File FileName="BLEPractice.Implementation/Services/BLEService.cs" Line="1" Column="1" />
+      <File FileName="BLEPractice.Droid/Properties/AndroidManifest.xml" Line="9" Column="79" />
+      <File FileName="BLEPractice.Abstractions/Interfaces/BLE_Interfaces/IListItem.cs" Line="16" Column="6" />
+      <File FileName="BLEPractice.Abstractions/Helpers/DataItem.cs" Line="7" Column="6" />
+      <File FileName="BLEPractice.Abstractions/Interfaces/BLE_Interfaces/IBLEReciver.cs" Line="15" Column="1" />
+      <File FileName="BLEPractice.Droid/LinkerPleaseInclude.cs" Line="28" Column="43" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BLEPractice.Core" expanded="True">
+            <Node name="BLEPractice.Abstractions" expanded="True">
+              <Node name="Interfaces" expanded="True">
+                <Node name="BLE_Interfaces" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="BLEPractice.Core" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="ViewModels" expanded="True" />
+              <Node name="App.cs" selected="True" />
+            </Node>
+            <Node name="BLEPractice.Droid" expanded="True">
+              <Node name="Views" expanded="True" />
+            </Node>
+            <Node name="BLEPractice.Implementation" expanded="True">
+              <Node name="Services" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.BLEPractice.Abstractions FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.BLEPractice.Implementation FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.BLEPractice.Droid FirstBuild="True" PreferredExecutionTarget="Android.pixel_3a_q_10_0_-_api_29" />
+</Properties>
