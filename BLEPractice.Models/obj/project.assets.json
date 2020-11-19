@@ -1,0 +1,199 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETStandard,Version=v2.1": {
+      "Acr.UserDialogs/7.1.0.466": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Acr.UserDialogs.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Acr.UserDialogs.dll": {}
+        }
+      },
+      "MvvmCross/6.4.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/MvvmCross.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmCross.dll": {}
+        }
+      },
+      "BLEPractice.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Acr.UserDialogs": "7.1.0.466",
+          "MvvmCross": "6.4.2"
+        },
+        "compile": {
+          "bin/placeholder/BLEPractice.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BLEPractice.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Acr.UserDialogs/7.1.0.466": {
+      "sha512": "vZdR+M0cvrNNQUNDKSmCtY4jg3JTDJ6VxpE3+id+DePwKtwGVGTWYkvOxFywZAbkqqRMSMhc904zz66XE95gNQ==",
+      "type": "package",
+      "path": "acr.userdialogs/7.1.0.466",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "acr.userdialogs.7.1.0.466.nupkg.sha512",
+        "acr.userdialogs.nuspec",
+        "lib/monoandroid10.0/Acr.UserDialogs.dll",
+        "lib/monoandroid10.0/Acr.UserDialogs.pdb",
+        "lib/monoandroid10.0/Acr.UserDialogs.xml",
+        "lib/monoandroid90/Acr.UserDialogs.dll",
+        "lib/monoandroid90/Acr.UserDialogs.dll.mdb",
+        "lib/monoandroid90/Acr.UserDialogs.pdb",
+        "lib/monoandroid90/Acr.UserDialogs.xml",
+        "lib/netstandard2.0/Acr.UserDialogs.dll",
+        "lib/netstandard2.0/Acr.UserDialogs.pdb",
+        "lib/netstandard2.0/Acr.UserDialogs.xml",
+        "lib/uap10.0.16299/Acr.UserDialogs.dll",
+        "lib/uap10.0.16299/Acr.UserDialogs.pdb",
+        "lib/uap10.0.16299/Acr.UserDialogs.pri",
+        "lib/uap10.0.16299/Acr.UserDialogs.xml",
+        "lib/uap10.0.16299/Acr.UserDialogs/Acr.UserDialogs.xr.xml",
+        "lib/xamarinios10/Acr.UserDialogs.dll",
+        "lib/xamarinios10/Acr.UserDialogs.pdb",
+        "lib/xamarinios10/Acr.UserDialogs.xml",
+        "lib/xamarinmac20/Acr.UserDialogs.dll",
+        "lib/xamarinmac20/Acr.UserDialogs.pdb",
+        "lib/xamarinmac20/Acr.UserDialogs.xml",
+        "lib/xamarintvos10/Acr.UserDialogs.dll",
+        "lib/xamarintvos10/Acr.UserDialogs.pdb",
+        "lib/xamarintvos10/Acr.UserDialogs.xml",
+        "readme.txt"
+      ]
+    },
+    "MvvmCross/6.4.2": {
+      "sha512": "ttJOEXQE8MFEMlcuJL6Eonzj1QtfhO95qTrQLcdirV+41PgT7se4XqdDWqL263nrl/2i4CATC2qgokh7IV8msA==",
+      "type": "package",
+      "path": "mvvmcross/6.4.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/monoandroid10.0/MvvmCross.dll",
+        "lib/monoandroid10.0/MvvmCross.pdb",
+        "lib/monoandroid10.0/MvvmCross.xml",
+        "lib/monoandroid90/MvvmCross.dll",
+        "lib/monoandroid90/MvvmCross.pdb",
+        "lib/monoandroid90/MvvmCross.xml",
+        "lib/net461/MvvmCross.dll",
+        "lib/net461/MvvmCross.pdb",
+        "lib/net461/MvvmCross.xml",
+        "lib/netcoreapp2.1/MvvmCross.dll",
+        "lib/netcoreapp2.1/MvvmCross.pdb",
+        "lib/netcoreapp2.1/MvvmCross.xml",
+        "lib/netcoreapp3.0/MvvmCross.dll",
+        "lib/netcoreapp3.0/MvvmCross.pdb",
+        "lib/netcoreapp3.0/MvvmCross.xml",
+        "lib/netcoreapp3.1/MvvmCross.dll",
+        "lib/netcoreapp3.1/MvvmCross.pdb",
+        "lib/netcoreapp3.1/MvvmCross.xml",
+        "lib/netstandard2.0/MvvmCross.dll",
+        "lib/netstandard2.0/MvvmCross.pdb",
+        "lib/netstandard2.0/MvvmCross.xml",
+        "lib/tizen40/MvvmCross.dll",
+        "lib/tizen40/MvvmCross.pdb",
+        "lib/tizen40/MvvmCross.xml",
+        "lib/uap10.0.16299/MvvmCross.dll",
+        "lib/uap10.0.16299/MvvmCross.pdb",
+        "lib/uap10.0.16299/MvvmCross.pri",
+        "lib/uap10.0.16299/MvvmCross.xml",
+        "lib/xamarinios10/MvvmCross.dll",
+        "lib/xamarinios10/MvvmCross.pdb",
+        "lib/xamarinios10/MvvmCross.xml",
+        "lib/xamarinmac20/MvvmCross.dll",
+        "lib/xamarinmac20/MvvmCross.pdb",
+        "lib/xamarinmac20/MvvmCross.xml",
+        "lib/xamarintvos10/MvvmCross.dll",
+        "lib/xamarintvos10/MvvmCross.pdb",
+        "lib/xamarintvos10/MvvmCross.xml",
+        "lib/xamarinwatchos10/MvvmCross.dll",
+        "lib/xamarinwatchos10/MvvmCross.pdb",
+        "lib/xamarinwatchos10/MvvmCross.xml",
+        "mvvmcross.6.4.2.nupkg.sha512",
+        "mvvmcross.nuspec",
+        "readme.txt"
+      ]
+    },
+    "BLEPractice.Core/1.0.0": {
+      "type": "project",
+      "path": "../BLEPractice.Core/BLEPractice.Core.csproj",
+      "msbuildProject": "../BLEPractice.Core/BLEPractice.Core.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETStandard,Version=v2.1": [
+      "BLEPractice.Core >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/dmn/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Models/BLEPractice.Models.csproj",
+      "projectName": "BLEPractice.Models",
+      "projectPath": "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Models/BLEPractice.Models.csproj",
+      "packagesPath": "/Users/dmn/.nuget/packages/",
+      "outputPath": "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Models/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/dmn/.config/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netstandard2.1"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "projectReferences": {
+            "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Core/BLEPractice.Core.csproj": {
+              "projectPath": "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Core/BLEPractice.Core.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netstandard2.1": {
+        "targetAlias": "netstandard2.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "NETStandard.Library": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,4 +1,0 @@
-/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Core/obj/Debug/netstandard2.1/BLEPractice.Core.csprojAssemblyReference.cache
-/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Core/obj/Debug/netstandard2.1/BLEPractice.Core.AssemblyInfoInputs.cache
-/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Core/obj/Debug/netstandard2.1/BLEPractice.Core.AssemblyInfo.cs
-/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Core/obj/Debug/netstandard2.1/BLEPractice.Core.csproj.CoreCompileInputs.cache

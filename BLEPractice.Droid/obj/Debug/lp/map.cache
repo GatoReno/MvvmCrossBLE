@@ -1,6 +1,14 @@
 Acr.UserDialogs
 AndHUD
 MvvmCross
+MvvmCross.Droid.Support.Core.UI
+MvvmCross.Droid.Support.Design
+MvvmCross.Droid.Support.Fragment
+MvvmCross.Droid.Support.V7.AppCompat
+MvvmCross.Droid.Support.V7.RecyclerView
+MvvmCross.Plugins.BLE.Droid
+Plugin.BLE
+Plugin.BluetoothLE
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Core.Runtime
 Xamarin.Android.Arch.Lifecycle.Common
@@ -37,11 +45,3 @@ Xamarin.Android.Support.Vector.Drawable
 Xamarin.Android.Support.VersionedParcelable
 Xamarin.Android.Support.ViewPager
 Xamarin.Essentials
-MvvmCross.Droid.Support.Core.UI
-MvvmCross.Droid.Support.Design
-MvvmCross.Droid.Support.Fragment
-MvvmCross.Droid.Support.V7.AppCompat
-MvvmCross.Droid.Support.V7.RecyclerView
-MvvmCross.Plugins.BLE.Droid
-Plugin.BLE
-Plugin.BluetoothLE

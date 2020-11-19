@@ -7,4 +7,9 @@
   <ItemGroup>
     <Folder Include="Services\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLEPractice.Core\BLEPractice.Core.csproj" />
+    <ProjectReference Include="..\BLEPractice.Abstractions\BLEPractice.Abstractions.csproj" />
+    <ProjectReference Include="..\BLEPractice.Models\BLEPractice.Models.csproj" />
+  </ItemGroup>
 </Project>

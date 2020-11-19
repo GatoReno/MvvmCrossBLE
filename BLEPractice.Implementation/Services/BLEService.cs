@@ -1,7 +1,8 @@
 ﻿using System;
+ 
 namespace BLEPractice.Implementation.Services
 {
-    public class BLEService  
+    public class BLEService  : IBLEReciver
     {
         public BLEService()
         {

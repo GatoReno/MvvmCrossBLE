@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "LouV37csxHKKLqo5lCIHKO0fwXQO44LwyQL5Wv9KkmPb7mRB3MxoF9uWuonGMsUuPJVMKM1DPkxx2MASpcj2xw==",
+  "dgSpecHash": "tDCpa0M5BjOBdC9ZjF0efj1iT7WAaptkM3lc/JpsTLAmGF/7ZJY0V5eNBEVczszjNMdMTqOGwP0Mnz27WWTGzw==",
   "success": true,
   "projectFilePath": "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Abstractions/BLEPractice.Abstractions.csproj",
   "expectedPackageFiles": [
     "/Users/dmn/.nuget/packages/acr.ble/2.0.0/acr.ble.2.0.0.nupkg.sha512",
+    "/Users/dmn/.nuget/packages/acr.userdialogs/7.1.0.466/acr.userdialogs.7.1.0.466.nupkg.sha512",
+    "/Users/dmn/.nuget/packages/mvvmcross/6.4.2/mvvmcross.6.4.2.nupkg.sha512",
     "/Users/dmn/.nuget/packages/mvvmcross.plugin.ble/2.1.1/mvvmcross.plugin.ble.2.1.1.nupkg.sha512",
     "/Users/dmn/.nuget/packages/plugin.ble/2.1.1/plugin.ble.2.1.1.nupkg.sha512",
     "/Users/dmn/.nuget/packages/plugin.bluetoothle/2.0.0/plugin.bluetoothle.2.0.0.nupkg.sha512",

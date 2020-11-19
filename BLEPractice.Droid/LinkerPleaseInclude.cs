@@ -17,14 +17,7 @@ namespace BLEPractice.Droid
     [Android.Runtime.Preserve(AllMembers = true)]
     public class LinkerPleaseInclude
     {
-        //BLE
-
-        public void Include(MvvmCross.Plugins.BLE.Droid.Plugin plugin)
-        {
-            plugin.Load();
-        }
-
-        //
+       
         public void Include(Button button)
         {
             button.Click += (s, e) => button.Text = button.Text + "";

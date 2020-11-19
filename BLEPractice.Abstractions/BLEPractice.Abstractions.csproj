@@ -18,4 +18,7 @@
     <PackageReference Include="Acr.Ble" Version="2.0.0" />
     <PackageReference Include="MvvmCross.Plugin.BLE" Version="2.1.1" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLEPractice.Models\BLEPractice.Models.csproj" />
+  </ItemGroup>
 </Project>

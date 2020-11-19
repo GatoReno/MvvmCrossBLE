@@ -953,10 +953,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
-          "Acr.Ble": "2.0.0",
           "Acr.UserDialogs": "7.1.0.466",
-          "MvvmCross": "6.4.2",
-          "MvvmCross.Plugin.BLE": "2.1.1"
+          "MvvmCross": "6.4.2"
         },
         "compile": {
           "bin/placeholder/BLEPractice.Core.dll": {}

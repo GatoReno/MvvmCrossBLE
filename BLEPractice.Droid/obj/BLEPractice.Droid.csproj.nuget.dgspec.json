@@ -38,10 +38,6 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "dependencies": {
-            "Acr.Ble": {
-              "target": "Package",
-              "version": "[2.0.0, )"
-            },
             "Acr.UserDialogs": {
               "target": "Package",
               "version": "[7.1.0.466, )"
@@ -49,10 +45,6 @@
             "MvvmCross": {
               "target": "Package",
               "version": "[6.4.2, )"
-            },
-            "MvvmCross.Plugin.BLE": {
-              "target": "Package",
-              "version": "[2.1.1, )"
             }
           },
           "imports": [

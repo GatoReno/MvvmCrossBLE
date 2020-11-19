@@ -7,7 +7,7 @@ namespace BLEPractice.Abstractions.Interfaces.BLE_Interfaces
 {
     public interface IBLEReciver
     {
-        IEnumerable<BluetoothDevice> RegisteredBluetoothDevices();
+        IEnumerable<BLEDeviceModel> RegisteredBluetoothDevices();
         public void ScanForUnregisteredDevices();
         public void StopScanForUnregisteredDevices();
     }

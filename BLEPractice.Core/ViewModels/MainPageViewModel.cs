@@ -1,9 +1,7 @@
 ﻿using System;
 using Acr.UserDialogs;
 using MvvmCross.Logging;
-using MvvmCross.Navigation;
-using Plugin.BLE.Abstractions.Contracts;
-
+using MvvmCross.Navigation; 
 namespace BLEPractice.Core.ViewModels
 {
     public class MainPageViewModel : BaseNavigationViewModel
@@ -12,20 +10,27 @@ namespace BLEPractice.Core.ViewModels
 
 
 
-        private readonly IBluetoothLE _ble;
-        private readonly IAdapter _adapter;
+   
+     
 
         public MainPageViewModel(IMvxLogProvider logProvider,
             IMvxNavigationService navigationService,
-            IUserDialogs userDialogs, IBluetoothLE ble, IAdapter adapter) : base(logProvider, navigationService)
+            IUserDialogs userDialogs ) : base(logProvider, navigationService)
         {
             _userDialogs = userDialogs;
-            _ble = ble;
-            _adapter = adapter;
-
+           
         }
 
+        public async override void ViewCreated()
+        {
+            base.ViewCreated();
+         }
+
         
+         override vi
+
+
     }
 
 }
+

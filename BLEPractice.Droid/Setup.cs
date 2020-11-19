@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using MvvmCross;
 using System.Reflection;
 using BLEPractice.Core;
+using MvvmCross.Droid.Support.V7.AppCompat;
+using MvvmCross.Droid.Support.V7.RecyclerView;
 
 namespace BLEPractice.Droid
 {

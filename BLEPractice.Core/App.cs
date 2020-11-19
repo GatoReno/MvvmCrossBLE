@@ -20,8 +20,8 @@ namespace BLEPractice.Core
             // Mvx.IoCProvider.LazyConstructAndRegisterSingleton<IUserService, MockUserService>();
             //service
             Mvx.IoCProvider.RegisterSingleton<IUserDialogs>(UserDialogs.Instance);
-             
-            //Mvx.IoCProvider.LazyConstructAndRegisterSingleton<IUserService, DBUserService>();
+            //Mvx.IoCProvider.LazyConstructAndRegisterSingleton<IBluetoothLE,>();
+
             RegisterAppStart<MainPageViewModel>();
         }
     }

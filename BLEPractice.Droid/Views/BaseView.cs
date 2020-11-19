@@ -1,4 +1,10 @@
 ﻿using System;
+using Android.OS;
+using Android.Widget;
+using MvvmCross.Base;
+using MvvmCross.Droid.Support.V7.AppCompat;
+using MvvmCross.ViewModels;
+
 namespace BLEPractice.Droid.Views
 {
     public class BaseView<T> : MvxAppCompatActivity<T> where T : MvxViewModel
