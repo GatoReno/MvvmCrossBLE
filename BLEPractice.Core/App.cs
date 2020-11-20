@@ -1,11 +1,11 @@
 ﻿using System;
 using Acr.UserDialogs;
+using BLEPractice.Abstractions.Interfaces;
 using BLEPractice.Core.ViewModels;
+ 
 using MvvmCross;
 using MvvmCross.IoC;
-using MvvmCross.ViewModels;
-using Plugin.BLE.Abstractions.Contracts;
-
+using MvvmCross.ViewModels; 
 namespace BLEPractice.Core
 {
     public class App : MvxApplication
@@ -20,7 +20,8 @@ namespace BLEPractice.Core
             // Mvx.IoCProvider.LazyConstructAndRegisterSingleton<IUserService, MockUserService>();
             //service
             Mvx.IoCProvider.RegisterSingleton<IUserDialogs>(UserDialogs.Instance);
-            //Mvx.IoCProvider.LazyConstructAndRegisterSingleton<IBluetoothLE,>();
+            //Mvx.IoCProvider.LazyConstructAndRegisterSingleton<IBLECastReciver, BLECastReciver>();
+            //BLECastReciver
 
             RegisterAppStart<MainPageViewModel>();
         }

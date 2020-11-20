@@ -1,0 +1,83 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.1/",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.1": {},
+    ".NETStandard,Version=v2.1/": {
+      "BLEPractice.Core/1.0.0": {
+        "dependencies": {
+          "Acr.UserDialogs": "7.1.0.466",
+          "BLEPractice.Abstractions": "1.0.0",
+          "BLEPractice.Implementation": "1.0.0",
+          "MvvmCross": "6.4.2"
+        },
+        "runtime": {
+          "BLEPractice.Core.dll": {}
+        }
+      },
+      "Acr.UserDialogs/7.1.0.466": {
+        "runtime": {
+          "lib/netstandard2.0/Acr.UserDialogs.dll": {
+            "assemblyVersion": "7.1.0.466",
+            "fileVersion": "7.1.0.466"
+          }
+        }
+      },
+      "MvvmCross/6.4.2": {
+        "runtime": {
+          "lib/netstandard2.0/MvvmCross.dll": {
+            "assemblyVersion": "6.4.2.0",
+            "fileVersion": "6.4.2.0"
+          }
+        }
+      },
+      "BLEPractice.Abstractions/1.0.0": {
+        "runtime": {
+          "BLEPractice.Abstractions.dll": {}
+        }
+      },
+      "BLEPractice.Implementation/1.0.0": {
+        "dependencies": {
+          "BLEPractice.Abstractions": "1.0.0"
+        },
+        "runtime": {
+          "BLEPractice.Implementation.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BLEPractice.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Acr.UserDialogs/7.1.0.466": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vZdR+M0cvrNNQUNDKSmCtY4jg3JTDJ6VxpE3+id+DePwKtwGVGTWYkvOxFywZAbkqqRMSMhc904zz66XE95gNQ==",
+      "path": "acr.userdialogs/7.1.0.466",
+      "hashPath": "acr.userdialogs.7.1.0.466.nupkg.sha512"
+    },
+    "MvvmCross/6.4.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ttJOEXQE8MFEMlcuJL6Eonzj1QtfhO95qTrQLcdirV+41PgT7se4XqdDWqL263nrl/2i4CATC2qgokh7IV8msA==",
+      "path": "mvvmcross/6.4.2",
+      "hashPath": "mvvmcross.6.4.2.nupkg.sha512"
+    },
+    "BLEPractice.Abstractions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BLEPractice.Implementation/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

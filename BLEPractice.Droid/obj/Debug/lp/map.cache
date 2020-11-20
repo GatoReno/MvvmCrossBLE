@@ -6,8 +6,6 @@ MvvmCross.Droid.Support.Design
 MvvmCross.Droid.Support.Fragment
 MvvmCross.Droid.Support.V7.AppCompat
 MvvmCross.Droid.Support.V7.RecyclerView
-MvvmCross.Plugins.BLE.Droid
-Plugin.BLE
 Plugin.BluetoothLE
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Core.Runtime

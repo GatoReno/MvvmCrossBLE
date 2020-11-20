@@ -4,14 +4,14 @@
     "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Models/BLEPractice.Models.csproj": {}
   },
   "projects": {
-    "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Core/BLEPractice.Core.csproj": {
+    "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Abstractions/BLEPractice.Abstractions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Core/BLEPractice.Core.csproj",
-        "projectName": "BLEPractice.Core",
-        "projectPath": "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Core/BLEPractice.Core.csproj",
+        "projectUniqueName": "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Abstractions/BLEPractice.Abstractions.csproj",
+        "projectName": "BLEPractice.Abstractions",
+        "projectPath": "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Abstractions/BLEPractice.Abstractions.csproj",
         "packagesPath": "/Users/dmn/.nuget/packages/",
-        "outputPath": "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Core/obj/",
+        "outputPath": "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Abstractions/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/dmn/.config/NuGet/NuGet.Config"
@@ -37,6 +37,65 @@
       "frameworks": {
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Core/BLEPractice.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Core/BLEPractice.Core.csproj",
+        "projectName": "BLEPractice.Core",
+        "projectPath": "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Core/BLEPractice.Core.csproj",
+        "packagesPath": "/Users/dmn/.nuget/packages/",
+        "outputPath": "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/dmn/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Abstractions/BLEPractice.Abstractions.csproj": {
+                "projectPath": "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Abstractions/BLEPractice.Abstractions.csproj"
+              },
+              "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Implementation/BLEPractice.Implementation.csproj": {
+                "projectPath": "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Implementation/BLEPractice.Implementation.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
           "dependencies": {
             "Acr.UserDialogs": {
               "target": "Package",
@@ -47,6 +106,62 @@
               "version": "[6.4.2, )"
             }
           },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Implementation/BLEPractice.Implementation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Implementation/BLEPractice.Implementation.csproj",
+        "projectName": "BLEPractice.Implementation",
+        "projectPath": "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Implementation/BLEPractice.Implementation.csproj",
+        "packagesPath": "/Users/dmn/.nuget/packages/",
+        "outputPath": "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Implementation/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/dmn/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Abstractions/BLEPractice.Abstractions.csproj": {
+                "projectPath": "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Abstractions/BLEPractice.Abstractions.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
           "imports": [
             "net461",
             "net462",

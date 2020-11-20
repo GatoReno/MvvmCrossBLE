@@ -19,6 +19,29 @@
         "runtime": {
           "lib/netstandard2.0/MvvmCross.dll": {}
         }
+      },
+      "BLEPractice.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/BLEPractice.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BLEPractice.Abstractions.dll": {}
+        }
+      },
+      "BLEPractice.Implementation/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "BLEPractice.Abstractions": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BLEPractice.Implementation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BLEPractice.Implementation.dll": {}
+        }
       }
     }
   },
@@ -111,11 +134,23 @@
         "mvvmcross.nuspec",
         "readme.txt"
       ]
+    },
+    "BLEPractice.Abstractions/1.0.0": {
+      "type": "project",
+      "path": "../BLEPractice.Abstractions/BLEPractice.Abstractions.csproj",
+      "msbuildProject": "../BLEPractice.Abstractions/BLEPractice.Abstractions.csproj"
+    },
+    "BLEPractice.Implementation/1.0.0": {
+      "type": "project",
+      "path": "../BLEPractice.Implementation/BLEPractice.Implementation.csproj",
+      "msbuildProject": "../BLEPractice.Implementation/BLEPractice.Implementation.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.1": [
       "Acr.UserDialogs >= 7.1.0.466",
+      "BLEPractice.Abstractions >= 1.0.0",
+      "BLEPractice.Implementation >= 1.0.0",
       "MvvmCross >= 6.4.2"
     ]
   },
@@ -143,7 +178,14 @@
       "frameworks": {
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Abstractions/BLEPractice.Abstractions.csproj": {
+              "projectPath": "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Abstractions/BLEPractice.Abstractions.csproj"
+            },
+            "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Implementation/BLEPractice.Implementation.csproj": {
+              "projectPath": "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Implementation/BLEPractice.Implementation.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

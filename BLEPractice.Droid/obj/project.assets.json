@@ -135,32 +135,6 @@
           "lib/monoandroid90/MvvmCross.Droid.Support.V7.RecyclerView.dll": {}
         }
       },
-      "MvvmCross.Plugin.BLE/2.1.1": {
-        "type": "package",
-        "dependencies": {
-          "MvvmCross": "6.0.0",
-          "Plugin.BLE": "2.1.1"
-        },
-        "compile": {
-          "lib/MonoAndroid/MvvmCross.Plugins.BLE.Droid.dll": {},
-          "lib/MonoAndroid/MvvmCross.Plugins.BLE.dll": {}
-        },
-        "runtime": {
-          "lib/MonoAndroid/MvvmCross.Plugins.BLE.Droid.dll": {},
-          "lib/MonoAndroid/MvvmCross.Plugins.BLE.dll": {}
-        }
-      },
-      "Plugin.BLE/2.1.1": {
-        "type": "package",
-        "compile": {
-          "lib/MonoAndroid/Plugin.BLE.Abstractions.dll": {},
-          "lib/MonoAndroid/Plugin.BLE.dll": {}
-        },
-        "runtime": {
-          "lib/MonoAndroid/Plugin.BLE.Abstractions.dll": {},
-          "lib/MonoAndroid/Plugin.BLE.dll": {}
-        }
-      },
       "Plugin.BluetoothLE/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -949,11 +923,23 @@
           "lib/monoandroid90/Xamarin.Essentials.dll": {}
         }
       },
+      "BLEPractice.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/BLEPractice.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BLEPractice.Abstractions.dll": {}
+        }
+      },
       "BLEPractice.Core/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "Acr.UserDialogs": "7.1.0.466",
+          "BLEPractice.Abstractions": "1.0.0",
+          "BLEPractice.Implementation": "1.0.0",
           "MvvmCross": "6.4.2"
         },
         "compile": {
@@ -961,6 +947,32 @@
         },
         "runtime": {
           "bin/placeholder/BLEPractice.Core.dll": {}
+        }
+      },
+      "BLEPractice.Implementation/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "BLEPractice.Abstractions": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BLEPractice.Implementation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BLEPractice.Implementation.dll": {}
+        }
+      },
+      "BLEPractice.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "BLEPractice.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BLEPractice.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BLEPractice.Models.dll": {}
         }
       }
     }
@@ -1169,63 +1181,6 @@
         "lib/monoandroid90/MvvmCross.Droid.Support.V7.RecyclerView.xml",
         "mvvmcross.droid.support.v7.recyclerview.6.4.2.nupkg.sha512",
         "mvvmcross.droid.support.v7.recyclerview.nuspec"
-      ]
-    },
-    "MvvmCross.Plugin.BLE/2.1.1": {
-      "sha512": "CmbO6psL4fUw1jmdtaiiliOooa8AkZgT3tE8WR8SUnqrVu+nj3+N28aiX05Vr+x6YRhKsndznFv9sT/uX8k6eA==",
-      "type": "package",
-      "path": "mvvmcross.plugin.ble/2.1.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/MonoAndroid/MvvmCross.Plugins.BLE.Droid.dll",
-        "lib/MonoAndroid/MvvmCross.Plugins.BLE.Droid.pdb",
-        "lib/MonoAndroid/MvvmCross.Plugins.BLE.deps.json",
-        "lib/MonoAndroid/MvvmCross.Plugins.BLE.dll",
-        "lib/MonoAndroid/MvvmCross.Plugins.BLE.pdb",
-        "lib/Xamarin.iOS10/MvvmCross.Plugins.BLE.deps.json",
-        "lib/Xamarin.iOS10/MvvmCross.Plugins.BLE.dll",
-        "lib/Xamarin.iOS10/MvvmCross.Plugins.BLE.iOS.dll",
-        "lib/Xamarin.iOS10/MvvmCross.Plugins.BLE.pdb",
-        "lib/netstandard2.0/MvvmCross.Plugins.BLE.deps.json",
-        "lib/netstandard2.0/MvvmCross.Plugins.BLE.dll",
-        "lib/netstandard2.0/MvvmCross.Plugins.BLE.pdb",
-        "mvvmcross.plugin.ble.2.1.1.nupkg.sha512",
-        "mvvmcross.plugin.ble.nuspec"
-      ]
-    },
-    "Plugin.BLE/2.1.1": {
-      "sha512": "kVEP+SA/QFMR72YgcvcebwCXfVsiKrD6pF7wn0JCwjunriBmCjnNQfLyVmhxGE24jjS4bDJfeOiDv8dA+k/Psg==",
-      "type": "package",
-      "path": "plugin.ble/2.1.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/MonoAndroid/Plugin.BLE.Abstractions.deps.json",
-        "lib/MonoAndroid/Plugin.BLE.Abstractions.dll",
-        "lib/MonoAndroid/Plugin.BLE.Abstractions.pdb",
-        "lib/MonoAndroid/Plugin.BLE.XML",
-        "lib/MonoAndroid/Plugin.BLE.dll",
-        "lib/MonoAndroid/Plugin.BLE.pdb",
-        "lib/Xamarin.iOS10/Plugin.BLE.Abstractions.deps.json",
-        "lib/Xamarin.iOS10/Plugin.BLE.Abstractions.dll",
-        "lib/Xamarin.iOS10/Plugin.BLE.Abstractions.pdb",
-        "lib/Xamarin.iOS10/Plugin.BLE.XML",
-        "lib/Xamarin.iOS10/Plugin.BLE.dll",
-        "lib/Xamarin.iOS10/Plugin.BLE.pdb",
-        "lib/netstandard2.0/Plugin.BLE.Abstractions.deps.json",
-        "lib/netstandard2.0/Plugin.BLE.Abstractions.dll",
-        "lib/netstandard2.0/Plugin.BLE.Abstractions.pdb",
-        "lib/netstandard2.0/Plugin.BLE.deps.json",
-        "lib/netstandard2.0/Plugin.BLE.dll",
-        "lib/netstandard2.0/Plugin.BLE.pdb",
-        "lib/xamarinmac20/Plugin.BLE.Abstractions.deps.json",
-        "lib/xamarinmac20/Plugin.BLE.Abstractions.dll",
-        "lib/xamarinmac20/Plugin.BLE.Abstractions.pdb",
-        "lib/xamarinmac20/Plugin.BLE.macOS.dll",
-        "lib/xamarinmac20/Plugin.BLE.macOS.xml",
-        "plugin.ble.2.1.1.nupkg.sha512",
-        "plugin.ble.nuspec"
       ]
     },
     "Plugin.BluetoothLE/2.0.0": {
@@ -2171,25 +2126,40 @@
         "xamarin.essentials.nuspec"
       ]
     },
+    "BLEPractice.Abstractions/1.0.0": {
+      "type": "project",
+      "path": "../BLEPractice.Abstractions/BLEPractice.Abstractions.csproj",
+      "msbuildProject": "../BLEPractice.Abstractions/BLEPractice.Abstractions.csproj"
+    },
     "BLEPractice.Core/1.0.0": {
       "type": "project",
       "path": "../BLEPractice.Core/BLEPractice.Core.csproj",
       "msbuildProject": "../BLEPractice.Core/BLEPractice.Core.csproj"
+    },
+    "BLEPractice.Implementation/1.0.0": {
+      "type": "project",
+      "path": "../BLEPractice.Implementation/BLEPractice.Implementation.csproj",
+      "msbuildProject": "../BLEPractice.Implementation/BLEPractice.Implementation.csproj"
+    },
+    "BLEPractice.Models/1.0.0": {
+      "type": "project",
+      "path": "../BLEPractice.Models/BLEPractice.Models.csproj",
+      "msbuildProject": "../BLEPractice.Models/BLEPractice.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v9.0": [
       "Acr.Ble >= 2.0.0",
       "Acr.UserDialogs >= 7.1.0.466",
+      "BLEPractice.Abstractions >= 1.0.0",
       "BLEPractice.Core >= 1.0.0",
+      "BLEPractice.Models >= 1.0.0",
       "MvvmCross >= 6.4.2",
       "MvvmCross.Droid.Support.V7.AppCompat >= 6.4.2",
       "MvvmCross.Droid.Support.V7.RecyclerView >= 6.4.2",
-      "MvvmCross.Plugin.BLE >= 2.1.1",
       "Xamarin.Android.Support.Core.Utils >= 28.0.0.3",
       "Xamarin.Android.Support.CustomTabs >= 28.0.0.3",
       "Xamarin.Android.Support.Design >= 28.0.0.3",
-      "Xamarin.Android.Support.v7.RecyclerView >= 28.0.0.3",
       "Xamarin.Essentials >= 1.5.3.2"
     ]
   },
@@ -2218,8 +2188,14 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
+            "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Abstractions/BLEPractice.Abstractions.csproj": {
+              "projectPath": "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Abstractions/BLEPractice.Abstractions.csproj"
+            },
             "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Core/BLEPractice.Core.csproj": {
               "projectPath": "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Core/BLEPractice.Core.csproj"
+            },
+            "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Models/BLEPractice.Models.csproj": {
+              "projectPath": "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Models/BLEPractice.Models.csproj"
             }
           }
         }
@@ -2248,10 +2224,6 @@
             "target": "Package",
             "version": "[6.4.2, )"
           },
-          "MvvmCross.Plugin.BLE": {
-            "target": "Package",
-            "version": "[2.1.1, )"
-          },
           "Xamarin.Android.Support.Core.Utils": {
             "target": "Package",
             "version": "[28.0.0.3, )"
@@ -2261,10 +2233,6 @@
             "version": "[28.0.0.3, )"
           },
           "Xamarin.Android.Support.Design": {
-            "target": "Package",
-            "version": "[28.0.0.3, )"
-          },
-          "Xamarin.Android.Support.v7.RecyclerView": {
             "target": "Package",
             "version": "[28.0.0.3, )"
           },

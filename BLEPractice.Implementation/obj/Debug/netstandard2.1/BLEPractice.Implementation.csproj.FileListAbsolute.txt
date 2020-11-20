@@ -1,0 +1,12 @@
+/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Implementation/bin/Debug/netstandard2.1/BLEPractice.Implementation.deps.json
+/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Implementation/bin/Debug/netstandard2.1/BLEPractice.Implementation.dll
+/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Implementation/bin/Debug/netstandard2.1/BLEPractice.Implementation.pdb
+/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Implementation/bin/Debug/netstandard2.1/BLEPractice.Abstractions.dll
+/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Implementation/bin/Debug/netstandard2.1/BLEPractice.Abstractions.pdb
+/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Implementation/obj/Debug/netstandard2.1/BLEPractice.Implementation.csprojAssemblyReference.cache
+/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Implementation/obj/Debug/netstandard2.1/BLEPractice.Implementation.AssemblyInfoInputs.cache
+/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Implementation/obj/Debug/netstandard2.1/BLEPractice.Implementation.AssemblyInfo.cs
+/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Implementation/obj/Debug/netstandard2.1/BLEPractice.Implementation.csproj.CoreCompileInputs.cache
+/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Implementation/obj/Debug/netstandard2.1/BLEPractice.Implementation.csproj.CopyComplete
+/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Implementation/obj/Debug/netstandard2.1/BLEPractice.Implementation.dll
+/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Implementation/obj/Debug/netstandard2.1/BLEPractice.Implementation.pdb

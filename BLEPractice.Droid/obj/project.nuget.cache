@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "rqR9K1942bfdYltm8lC3sEFckqQDl8B1I9UJ7WtUwrk+Acfq3ZtOco7kA4P82YSFlPsb5sQVCWAM7Fm9NpdHAg==",
+  "dgSpecHash": "0K0bbV5hSHwe6bHcY1HElY9mgNe78csEAWpLGNKEdSXAddjvH6bOSP3tL6447gfv0nno6pX1kO+FOTc0yFk83g==",
   "success": true,
   "projectFilePath": "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Droid/BLEPractice.Droid.csproj",
   "expectedPackageFiles": [
@@ -13,8 +13,6 @@
     "/Users/dmn/.nuget/packages/mvvmcross.droid.support.fragment/6.4.2/mvvmcross.droid.support.fragment.6.4.2.nupkg.sha512",
     "/Users/dmn/.nuget/packages/mvvmcross.droid.support.v7.appcompat/6.4.2/mvvmcross.droid.support.v7.appcompat.6.4.2.nupkg.sha512",
     "/Users/dmn/.nuget/packages/mvvmcross.droid.support.v7.recyclerview/6.4.2/mvvmcross.droid.support.v7.recyclerview.6.4.2.nupkg.sha512",
-    "/Users/dmn/.nuget/packages/mvvmcross.plugin.ble/2.1.1/mvvmcross.plugin.ble.2.1.1.nupkg.sha512",
-    "/Users/dmn/.nuget/packages/plugin.ble/2.1.1/plugin.ble.2.1.1.nupkg.sha512",
     "/Users/dmn/.nuget/packages/plugin.bluetoothle/2.0.0/plugin.bluetoothle.2.0.0.nupkg.sha512",
     "/Users/dmn/.nuget/packages/rx-core/2.2.5/rx-core.2.2.5.nupkg.sha512",
     "/Users/dmn/.nuget/packages/rx-interfaces/2.2.5/rx-interfaces.2.2.5.nupkg.sha512",

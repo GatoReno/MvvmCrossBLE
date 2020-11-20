@@ -20,11 +20,23 @@
           "lib/netstandard2.0/MvvmCross.dll": {}
         }
       },
+      "BLEPractice.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/BLEPractice.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BLEPractice.Abstractions.dll": {}
+        }
+      },
       "BLEPractice.Core/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "Acr.UserDialogs": "7.1.0.466",
+          "BLEPractice.Abstractions": "1.0.0",
+          "BLEPractice.Implementation": "1.0.0",
           "MvvmCross": "6.4.2"
         },
         "compile": {
@@ -32,6 +44,19 @@
         },
         "runtime": {
           "bin/placeholder/BLEPractice.Core.dll": {}
+        }
+      },
+      "BLEPractice.Implementation/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "BLEPractice.Abstractions": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BLEPractice.Implementation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BLEPractice.Implementation.dll": {}
         }
       }
     }
@@ -126,10 +151,20 @@
         "readme.txt"
       ]
     },
+    "BLEPractice.Abstractions/1.0.0": {
+      "type": "project",
+      "path": "../BLEPractice.Abstractions/BLEPractice.Abstractions.csproj",
+      "msbuildProject": "../BLEPractice.Abstractions/BLEPractice.Abstractions.csproj"
+    },
     "BLEPractice.Core/1.0.0": {
       "type": "project",
       "path": "../BLEPractice.Core/BLEPractice.Core.csproj",
       "msbuildProject": "../BLEPractice.Core/BLEPractice.Core.csproj"
+    },
+    "BLEPractice.Implementation/1.0.0": {
+      "type": "project",
+      "path": "../BLEPractice.Implementation/BLEPractice.Implementation.csproj",
+      "msbuildProject": "../BLEPractice.Implementation/BLEPractice.Implementation.csproj"
     }
   },
   "projectFileDependencyGroups": {

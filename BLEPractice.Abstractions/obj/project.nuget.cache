@@ -1,71 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tDCpa0M5BjOBdC9ZjF0efj1iT7WAaptkM3lc/JpsTLAmGF/7ZJY0V5eNBEVczszjNMdMTqOGwP0Mnz27WWTGzw==",
+  "dgSpecHash": "xp98lxFZFNgTtUpXB8yts+1kGTj64BCuRXWwgQSzOVhQ4+VKIEJ2NwottwuwDtxawfuaJjma2ndrZcHDcldYvw==",
   "success": true,
   "projectFilePath": "/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Abstractions/BLEPractice.Abstractions.csproj",
-  "expectedPackageFiles": [
-    "/Users/dmn/.nuget/packages/acr.ble/2.0.0/acr.ble.2.0.0.nupkg.sha512",
-    "/Users/dmn/.nuget/packages/acr.userdialogs/7.1.0.466/acr.userdialogs.7.1.0.466.nupkg.sha512",
-    "/Users/dmn/.nuget/packages/mvvmcross/6.4.2/mvvmcross.6.4.2.nupkg.sha512",
-    "/Users/dmn/.nuget/packages/mvvmcross.plugin.ble/2.1.1/mvvmcross.plugin.ble.2.1.1.nupkg.sha512",
-    "/Users/dmn/.nuget/packages/plugin.ble/2.1.1/plugin.ble.2.1.1.nupkg.sha512",
-    "/Users/dmn/.nuget/packages/plugin.bluetoothle/2.0.0/plugin.bluetoothle.2.0.0.nupkg.sha512",
-    "/Users/dmn/.nuget/packages/rx-core/2.2.5/rx-core.2.2.5.nupkg.sha512",
-    "/Users/dmn/.nuget/packages/rx-interfaces/2.2.5/rx-interfaces.2.2.5.nupkg.sha512",
-    "/Users/dmn/.nuget/packages/rx-linq/2.2.5/rx-linq.2.2.5.nupkg.sha512",
-    "/Users/dmn/.nuget/packages/rx-main/2.2.5/rx-main.2.2.5.nupkg.sha512",
-    "/Users/dmn/.nuget/packages/rx-platformservices/2.2.5/rx-platformservices.2.2.5.nupkg.sha512"
-  ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Plugin.BluetoothLE 2.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Plugin.BluetoothLE",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Rx-Core 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Rx-Core",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Rx-Interfaces 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Rx-Interfaces",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Rx-Linq 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Rx-Linq",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Rx-PlatformServices 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Rx-PlatformServices",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.1"
-      ]
-    }
-  ]
+  "expectedPackageFiles": [],
+  "logs": []
 }

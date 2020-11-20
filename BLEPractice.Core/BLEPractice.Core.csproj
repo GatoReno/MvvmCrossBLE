@@ -11,4 +11,8 @@
     <PackageReference Include="MvvmCross" Version="6.4.2" />
     <PackageReference Include="Acr.UserDialogs" Version="7.1.0.466" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLEPractice.Abstractions\BLEPractice.Abstractions.csproj" />
+    <ProjectReference Include="..\BLEPractice.Implementation\BLEPractice.Implementation.csproj" />
+  </ItemGroup>
 </Project>

@@ -1,0 +1,9 @@
+/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Abstractions/bin/Debug/netstandard2.1/BLEPractice.Abstractions.deps.json
+/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Abstractions/bin/Debug/netstandard2.1/BLEPractice.Abstractions.dll
+/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Abstractions/bin/Debug/netstandard2.1/BLEPractice.Abstractions.pdb
+/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Abstractions/obj/Debug/netstandard2.1/BLEPractice.Abstractions.AssemblyInfoInputs.cache
+/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Abstractions/obj/Debug/netstandard2.1/BLEPractice.Abstractions.AssemblyInfo.cs
+/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Abstractions/obj/Debug/netstandard2.1/BLEPractice.Abstractions.csproj.CoreCompileInputs.cache
+/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Abstractions/obj/Debug/netstandard2.1/BLEPractice.Abstractions.dll
+/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Abstractions/obj/Debug/netstandard2.1/BLEPractice.Abstractions.pdb
+/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Abstractions/obj/Debug/netstandard2.1/BLEPractice.Abstractions.csprojAssemblyReference.cache

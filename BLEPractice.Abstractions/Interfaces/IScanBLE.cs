@@ -1,10 +1,9 @@
 ﻿using System;
 namespace BLEPractice.Abstractions.Interfaces
 {
-    public class IScanBLE
+    public interface IScanBLE
     {
-        public IScanBLE()
-        {
-        }
+        void StartScanning();
+        void CancelScanning();
     }
 }
