@@ -6,14 +6,16 @@ using Android.OS;
 using BLEPractice.Abstractions.Interfaces;
 using BLEPractice.Core.ViewModels;
 using BLEPractice.Droid.BLEService;
+using MvvmCross.Base;
 using MvvmCross.Binding.BindingContext;
 using MvvmCross.Platforms.Android.Presenters.Attributes;
+using MvvmCross.ViewModels;
 
 namespace BLEPractice.Droid.Views
 {
     [MvxActivityPresentation]
     [Activity(Theme = "@style/AppTheme", MainLauncher = true)]
-    public class MainPageView : BaseView<MainPageViewModel> 
+    public class MainPageView : BaseView<MainPageViewModel> , IScanBLE
     {
 
         private BluetoothDeviceReceiver _receiver;
@@ -27,6 +29,7 @@ namespace BLEPractice.Droid.Views
             //
             var set = this.CreateBindingSet<MainPageView, MainPageViewModel>();
             set.Bind(SupportActionBar).For(v => v.Title).To(vm => vm.Title);
+            //set.Bind(this).For(v => v.StartInteraction).To(vm => vm.StartSCanInteraction);
             set.Apply();
 
             SetContentView(Resource.Layout.activity_main);
@@ -40,7 +43,8 @@ namespace BLEPractice.Droid.Views
 
 
             scanBlLEService = new BLEScanService();
-            scanBlLEService.StartScanning();
+            
+            //OnStartScanBLE();
 
             RegisterBluetoothReceiver();
 
@@ -56,7 +60,42 @@ namespace BLEPractice.Droid.Views
             _isReceiveredRegistered = true;
         }
 
-        
+        //private IMvxInteraction<bool> _startInteraction;
+        //public IMvxInteraction<bool> StartInteraction
+        //{
+        //    get => _startInteraction;
 
+        //    set
+        //    {
+        //        if (_startInteraction != null)
+        //        {
+        //            _startInteraction.Requested -= OnStartScanBLE;
+        //        }
+
+        //        _startInteraction = value;
+        //        _startInteraction.Requested += OnStartScanBLE;
+        //    }
+        //}
+
+        public void OnStartScanBLE(object sender, MvxValueEventArgs<bool> e)
+        {
+            scanBlLEService.StartScanning();
+           
+        }
+
+        public void OnStopScanBLE()
+        {
+            scanBlLEService.CancelScanning();
+        }
+
+        public void StartScanning()
+        {
+            scanBlLEService.StartScanning();
+        }
+
+        public void CancelScanning()
+        {
+            scanBlLEService.CancelScanning();
+        }
     }
 }

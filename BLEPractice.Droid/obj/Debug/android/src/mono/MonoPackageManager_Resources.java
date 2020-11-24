@@ -3,7 +3,6 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "BLEPractice.Droid.dll" comes first in this list. */
 		"BLEPractice.Droid.dll",
-		"BLEPractice.Implementation.dll",
 		"Acr.UserDialogs.dll",
 		"AndHUD.dll",
 		"BLEPractice.Abstractions.dll",

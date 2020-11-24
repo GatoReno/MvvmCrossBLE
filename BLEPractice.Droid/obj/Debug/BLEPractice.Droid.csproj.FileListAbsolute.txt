@@ -8,11 +8,9 @@
 /Users/dmn/Projects/BLEPractice.Core/BLEPractice.Droid/bin/Debug/BLEPractice.Abstractions.dll
 /Users/dmn/Projects/BLEPractice.Core/BLEPractice.Droid/bin/Debug/BLEPractice.Core.dll
 /Users/dmn/Projects/BLEPractice.Core/BLEPractice.Droid/bin/Debug/BLEPractice.Models.dll
-/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Droid/bin/Debug/BLEPractice.Implementation.dll
 /Users/dmn/Projects/BLEPractice.Core/BLEPractice.Droid/bin/Debug/BLEPractice.Core.pdb
 /Users/dmn/Projects/BLEPractice.Core/BLEPractice.Droid/bin/Debug/BLEPractice.Abstractions.pdb
 /Users/dmn/Projects/BLEPractice.Core/BLEPractice.Droid/bin/Debug/BLEPractice.Models.pdb
-/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Droid/bin/Debug/BLEPractice.Implementation.pdb
 /Users/dmn/Projects/BLEPractice.Core/BLEPractice.Droid/obj/Debug/MonoAndroid,Version=v9.0.AssemblyAttributes.cs
 /Users/dmn/Projects/BLEPractice.Core/BLEPractice.Droid/obj/Debug/build.props
 /Users/dmn/Projects/BLEPractice.Core/BLEPractice.Droid/obj/Debug/adb.props

@@ -5,6 +5,9 @@ using System.Reflection;
 using BLEPractice.Core;
 using MvvmCross.Droid.Support.V7.AppCompat;
 using MvvmCross.Droid.Support.V7.RecyclerView;
+using BLEPractice.Abstractions.Interfaces;
+using BLEPractice.Droid.BLEService;
+using MvvmCross.IoC;
 
 namespace BLEPractice.Droid
 {
@@ -19,6 +22,8 @@ namespace BLEPractice.Droid
         protected override void InitializeFirstChance()
         {
             base.InitializeFirstChance();
+            var blescan = new BLEScanService();
+            Mvx.IoCProvider.RegisterSingleton<IScanBLE>(blescan);
 
         }
     }

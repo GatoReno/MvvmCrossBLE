@@ -18,13 +18,13 @@
                 android:layout_height="wrap_content">
     
                 <TextView
-                app:MvxBind="Text Name"
+                app:MvxBind="Text SubTitle"
                 android:layout_width="155dp"
                 android:layout_height="match_parent"
                 android:textColor="@android:color/black"
             />
             <TextView
-                app:MvxBind="Text Name"
+                app:MvxBind="Text Text"
                 android:layout_width="155dp"
                 android:layout_height="match_parent"
                 android:textColor="@android:color/black"/>
