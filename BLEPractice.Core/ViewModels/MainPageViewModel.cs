@@ -4,6 +4,7 @@ using System.Linq;
 using Acr.UserDialogs;
 using BLEPractice.Abstractions.BLEHelpers;
 using BLEPractice.Abstractions.Interfaces;
+using MvvmCross.Commands;
 using MvvmCross.Logging;
 using MvvmCross.Navigation;
 using MvvmCross.ViewModels;
@@ -12,14 +13,28 @@ namespace BLEPractice.Core.ViewModels
 {
     public class MainPageViewModel : BaseNavigationViewModel, IBLECastReciver //implementar IBLE
     {
-        private readonly IUserDialogs _userDialogs;
-
-        //private MvxInteraction<bool> _interactionStartScan = new MvxInteraction<bool>();
-        //public IMvxInteraction<bool> StartSCanInteraction => _interactionStartScan;
-
+        private readonly IUserDialogs _userDialogs;                       
         private readonly IScanBLE _scanBLE;
         public MvxObservableCollection<BLEDataItem> bleDataItems { get; set; }
-     
+
+        private bool _showProgress;
+        public bool ShowProgress
+        {
+            get => _showProgress;
+            set => SetProperty(ref _showProgress, value);
+        }
+            
+        private string _blestatus;
+        public string Status
+        {
+            get => _blestatus;
+            set => SetProperty(ref _blestatus, value);
+        }
+
+
+        public IMvxCommand StartScanning { get; set; }
+        public IMvxCommand StopScanning { get; set; }
+
 
         public MainPageViewModel(// construir
             IMvxLogProvider logProvider,
@@ -31,11 +46,14 @@ namespace BLEPractice.Core.ViewModels
             _userDialogs = userDialogs; 
             bleDataItems = new MvxObservableCollection<BLEDataItem>();
             _scanBLE = scanBLEObject;
+            StartScanning = new MvxCommand(OnStartScannCommand);
+            StopScanning = new MvxCommand(OnStopScannCommand);
         }
 
         public override void ViewCreated()
         {
             base.ViewCreated();
+            ShowProgress = true;
         }
 
        
@@ -43,37 +61,43 @@ namespace BLEPractice.Core.ViewModels
         {
             base.ViewAppearing();
             _scanBLE.StartScanning();
-            //_interactionStartScan.Raise(true);
-        }
+         }
         public override void ViewDisappeared()
         {
             base.ViewDisappeared();
-            // _interactionStartScan.Raise(false);
-            _scanBLE.CancelScanning();
+             _scanBLE.CancelScanning();
+             
         }
 
-       
+
+        private void OnStartScannCommand()
+        {
+            bleDataItems.Clear();
+            _scanBLE.StartScanning();
+
+        }
+        private void OnStopScannCommand()
+        {
+            _scanBLE.CancelScanning();
+            //Status += " Scanning Stoped";
+        }
+
+
+
         public void AddDeviceRecived(BLEDataItem dataItem)
         {
             var items = bleDataItems.Where(m => m.GetListItemType() == ListItemType.DataItem).ToList();
           
             if (items != null && !items.Any(x =>
-                   ((BLEDataItem)x).Text == dataItem.Text && ((BLEDataItem)x).SubTitle == dataItem.SubTitle))
+                   ((BLEDataItem)x).Text == dataItem.Text
+                   && ((BLEDataItem)x).SubTitle == dataItem.SubTitle))
             {
                 bleDataItems.Add(dataItem);
             }
 
         }
 
-        //public void StartScanning()
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        //public void CancelScanning()
-        //{
-        //    throw new NotImplementedException();
-        //}
+    
     }
 
 }

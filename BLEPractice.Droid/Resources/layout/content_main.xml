@@ -1,20 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
+ 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
+    
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_main">
 
-     <MvvmCross.Droid.Support.V7.RecyclerView.MvxRecyclerView
-                android:layout_width="match_parent"
-                android:scrollbars="vertical"
-                android:id="@+id/poke_list_main"
-                app:MvxBind="ItemsSource bleDataItems;"
-                android:layout_height="match_parent"
-                app:MvxItemTemplate="@layout/bleitem_row"/>
+ 
+
+         <LinearLayout
+        android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+         <android.support.design.widget.FloatingActionButton
+                app:MvxBind="Click StartScanning"
+                android:layout_width="wrap_content"
+                android:elevation="10dp"
+                android:layout_height="wrap_content"/>
+
+            <android.support.design.widget.FloatingActionButton
+                app:MvxBind="Click StopScanning"
+                android:layout_width="wrap_content"
+                android:elevation="10dp"
+                android:layout_marginLeft="16dp"
+                app:backgroundTint="@android:color/holo_red_dark"
+                android:layout_height="wrap_content"/>        
+
+        </LinearLayout>
+
+       <LinearLayout
+        android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+           <TextView
+            android:layout_marginTop="70dp"
+                    app:MvxBind="Text Status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+          
+         <!--  --> <ProgressBar
+            android:id="@+id/circularProgressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="50"
+            android:layout_centerInParent="true"           
+            android:secondaryProgress="100" /> 
+             
+        </LinearLayout>
+
+
+     
+
+         <LinearLayout
+            android:paddingTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+              
+
+                <MvvmCross.Droid.Support.V7.RecyclerView.MvxRecyclerView
+                        android:layout_width="match_parent"
+                        android:scrollbars="vertical"
+                        android:id="@+id/poke_list_main"
+                        app:MvxBind="ItemsSource bleDataItems;"
+                        android:layout_height="match_parent"
+                        app:MvxItemTemplate="@layout/bleitem_row"/>
+            </LinearLayout>
+
+    
+    
         
 
 </RelativeLayout>

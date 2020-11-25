@@ -99,7 +99,10 @@ namespace BLEPractice.Droid
         {
             sb.ProgressChanged += (sender, args) => sb.Progress = sb.Progress + 1;
         }
-
+        public static void Include(ProgressBar progressBar)
+        {
+            progressBar.Click += (s, e) => progressBar.Visibility = progressBar.Visibility - 1;
+        }
         public void Include(RadioGroup radioGroup)
         {
             radioGroup.CheckedChange += (sender, args) => radioGroup.Check(args.CheckedId);

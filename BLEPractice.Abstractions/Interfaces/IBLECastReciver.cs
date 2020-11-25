@@ -5,6 +5,7 @@ namespace BLEPractice.Abstractions.Interfaces
 {
     public interface IBLECastReciver
     {
-        void AddDeviceRecived(BLEDataItem dataItem);
+        void AddDeviceRecived(BLEDataItem dataItem);        
+        string Status { get; set; }
     }
 }

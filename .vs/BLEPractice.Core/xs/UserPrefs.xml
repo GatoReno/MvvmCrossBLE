@@ -1,26 +1,27 @@
 ﻿<Properties StartupConfiguration="{B52BC904-6C58-41C0-8EA1-F46819EB4C17}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BLEPractice.Droid/BLEService/BluetoothDeviceReceiver.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BLEPractice.Droid/BLEService/content_main.xml">
     <Files>
-      <File FileName="BLEPractice.Core/ViewModels/MainPageViewModel.cs" Line="27" Column="96" />
+      <File FileName="BLEPractice.Core/ViewModels/MainPageViewModel.cs" Line="55" Column="32" />
       <File FileName="BLEPractice.Droid/Views/BaseView.cs" />
-      <File FileName="BLEPractice.Abstractions/Interfaces/IBLECastReciver.cs" />
+      <File FileName="BLEPractice.Abstractions/Interfaces/IBLECastReciver.cs" Line="6" Column="22" />
       <File FileName="BLEPractice.Core/App.cs" />
-      <File FileName="BLEPractice.Droid/Views/MainPageView.cs" Line="54" Column="1" NotebookId="1" />
-      <File FileName="BLEPractice.Droid/BLEService/BLEScanService.cs" NotebookId="1" />
-      <File FileName="BLEPractice.Droid/BLEService/BluetoothDeviceReceiver.cs" Line="12" Column="7" NotebookId="1" />
+      <File FileName="BLEPractice.Droid/Resources/layout/activity_main.xml" Line="2" Column="1" />
+      <File FileName="BLEPractice.Droid/Resources/layout/content_main.xml" Line="58" Column="51" />
+      <File FileName="BLEPractice.Droid/LinkerPleaseInclude.cs" Line="100" Column="16" />
+      <File FileName="BLEPractice.Droid/Views/MainPageView.cs" Line="41" Column="1" NotebookId="1" />
+      <File FileName="BLEPractice.Droid/BLEService/BluetoothDeviceReceiver.cs" Line="12" Column="31" NotebookId="1" />
       <File FileName="BLEPractice.Droid/Setup.cs" NotebookId="1" />
+      <File FileName="BLEPractice.Droid/BLEService/BLEScanService.cs" Line="18" Column="1" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="BLEPractice.Core" expanded="True" selected="True">
-            <Node name="BLEPractice.Abstractions" expanded="True" />
-            <Node name="BLEPractice.Core" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="ViewModels" expanded="True" />
-            </Node>
+          <Node name="BLEPractice.Core" expanded="True">
             <Node name="BLEPractice.Droid" expanded="True">
-              <Node name="BLEService" expanded="True" />
+              <Node name="BLEService" expanded="True">
+                <Node name="content_main.xml" selected="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
               <Node name="Views" expanded="True" />
             </Node>
             <Node name="BLEPractice.Models" expanded="True" />
@@ -34,16 +35,6 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Abstractions/Interfaces/MainActivityView.cs" relfile="BLEPractice.Abstractions/Interfaces/MainActivityView.cs" line="62" column="1" />
-      <Breakpoint file="/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Droid/Views/MainPageView.cs" relfile="BLEPractice.Droid/Views/MainPageView.cs" line="54" column="1" />
-      <Breakpoint file="/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Droid/Views/MainPageView.cs" relfile="BLEPractice.Droid/Views/MainPageView.cs" line="81" column="1" />
-      <Breakpoint file="/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Core/ViewModels/MainPageViewModel.cs" relfile="BLEPractice.Core/ViewModels/MainPageViewModel.cs" line="43" column="1" />
-      <Breakpoint file="/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Core/ViewModels/MainPageViewModel.cs" relfile="BLEPractice.Core/ViewModels/MainPageViewModel.cs" line="49" column="1" />
-      <Breakpoint file="/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Droid/Views/MainPageView.cs" relfile="BLEPractice.Droid/Views/MainPageView.cs" line="69" column="1" />
-      <Breakpoint file="/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Droid/Views/MainPageView.cs" relfile="BLEPractice.Droid/Views/MainPageView.cs" line="87" column="1" />
-      <Breakpoint file="/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Droid/BLEService/BLEScanService.cs" relfile="BLEPractice.Droid/BLEService/BLEScanService.cs" line="16" column="1" />
-      <Breakpoint file="/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Droid/Views/MainPageView.cs" relfile="BLEPractice.Droid/Views/MainPageView.cs" line="45" column="1" />
-      <Breakpoint file="/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Core/ViewModels/MainPageViewModel.cs" relfile="BLEPractice.Core/ViewModels/MainPageViewModel.cs" line="29" column="1" />
-      <Breakpoint file="/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Droid/Views/MainPageView.cs" relfile="BLEPractice.Droid/Views/MainPageView.cs" line="66" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

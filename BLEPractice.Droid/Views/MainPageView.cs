@@ -15,38 +15,39 @@ namespace BLEPractice.Droid.Views
 {
     [MvxActivityPresentation]
     [Activity(Theme = "@style/AppTheme", MainLauncher = true)]
-    public class MainPageView : BaseView<MainPageViewModel> , IScanBLE
+    public class MainPageView : BaseView<MainPageViewModel>  
     {
 
         private BluetoothDeviceReceiver _receiver;
         private BluetoothManager _manager;
         private bool _isReceiveredRegistered;
         private BLEScanService scanBlLEService;
-
+        private string bleStatus;
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
             //
-            var set = this.CreateBindingSet<MainPageView, MainPageViewModel>();
-            set.Bind(SupportActionBar).For(v => v.Title).To(vm => vm.Title);
-            //set.Bind(this).For(v => v.StartInteraction).To(vm => vm.StartSCanInteraction);
-            set.Apply();
+           
 
             SetContentView(Resource.Layout.activity_main);
 
             _manager = (BluetoothManager)Android.App.Application.Context.GetSystemService(Android.Content.Context.BluetoothService);
-            //_manager.Adapter.Enable();
+            _manager.Adapter.Enable();
             _receiver = new BluetoothDeviceReceiver();
 
 
             _receiver.BLECastReciver = ViewModel;
 
-
+            bleStatus = _receiver.BLECastReciver.Status;
             scanBlLEService = new BLEScanService();
-            
-            //OnStartScanBLE();
 
+            
             RegisterBluetoothReceiver();
+
+            var set = this.CreateBindingSet<MainPageView, MainPageViewModel>();
+            set.Bind(SupportActionBar).For(v => v.Title).To(vm => vm.Title);
+            set.Bind(this).For(v => v.scanBlLEService).To(vm => vm.Status);
+            set.Apply();
 
         }
 
@@ -60,25 +61,11 @@ namespace BLEPractice.Droid.Views
             _isReceiveredRegistered = true;
         }
 
-        //private IMvxInteraction<bool> _startInteraction;
-        //public IMvxInteraction<bool> StartInteraction
-        //{
-        //    get => _startInteraction;
-
-        //    set
-        //    {
-        //        if (_startInteraction != null)
-        //        {
-        //            _startInteraction.Requested -= OnStartScanBLE;
-        //        }
-
-        //        _startInteraction = value;
-        //        _startInteraction.Requested += OnStartScanBLE;
-        //    }
-        //}
+       
 
         public void OnStartScanBLE(object sender, MvxValueEventArgs<bool> e)
         {
+            
             scanBlLEService.StartScanning();
            
         }
@@ -88,14 +75,6 @@ namespace BLEPractice.Droid.Views
             scanBlLEService.CancelScanning();
         }
 
-        public void StartScanning()
-        {
-            scanBlLEService.StartScanning();
-        }
-
-        public void CancelScanning()
-        {
-            scanBlLEService.CancelScanning();
-        }
+      
     }
 }

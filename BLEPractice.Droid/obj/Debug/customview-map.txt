@@ -3,6 +3,7 @@ adaptive-icon;obj/Debug/res/mipmap-anydpi-v26/ic_launcher.xml
 adaptive-icon;obj/Debug/res/mipmap-anydpi-v26/ic_launcher_round.xml
 android.support.design.widget.CoordinatorLayout;obj/Debug/res/layout/activity_main.xml
 android.support.design.widget.FloatingActionButton;obj/Debug/res/layout/activity_main.xml
+android.support.design.widget.FloatingActionButton;obj/Debug/res/layout/content_main.xml
 android.support.v7.widget.CardView;obj/Debug/res/layout/bleitem_row.xml
 androidhud.ProgressWheel;/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Droid/obj/Debug/lp/1/jl/res/layout/loadingprogress.xml
 attr;/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Droid/obj/Debug/lp/1/jl/res/values/attrs.xml
@@ -32,10 +33,12 @@ item;/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Droid/obj/Debug/lp/2/jl/re
 item;obj/Debug/res/menu/menu_main.xml
 item;obj/Debug/res/values/styles.xml
 LinearLayout;obj/Debug/res/layout/bleitem_row.xml
+LinearLayout;obj/Debug/res/layout/content_main.xml
 menu;obj/Debug/res/menu/menu_main.xml
 MvvmCross.Droid.Support.V7.RecyclerView.MvxRecyclerView;obj/Debug/res/layout/content_main.xml
 paths;/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Droid/obj/Debug/lp/44/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
 ProgressBar;/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Droid/obj/Debug/lp/1/jl/res/layout/loading.xml
+ProgressBar;obj/Debug/res/layout/content_main.xml
 RelativeLayout;/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Droid/obj/Debug/lp/1/jl/res/layout/loading.xml
 RelativeLayout;/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Droid/obj/Debug/lp/1/jl/res/layout/loadingimage.xml
 RelativeLayout;/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Droid/obj/Debug/lp/1/jl/res/layout/loadingprogress.xml
