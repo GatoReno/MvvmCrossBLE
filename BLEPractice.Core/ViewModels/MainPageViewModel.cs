@@ -17,13 +17,7 @@ namespace BLEPractice.Core.ViewModels
         private readonly IScanBLE _scanBLE;
         public MvxObservableCollection<BLEDataItem> bleDataItems { get; set; }
 
-        //private bool _showProgress;
-        //public bool ShowProgress
-        //{
-        //    get => _showProgress;
-        //    set => SetProperty(ref _showProgress, value);
-        //}
-
+   
         //status
         private string _blestatus;
         public string Status
@@ -54,8 +48,7 @@ namespace BLEPractice.Core.ViewModels
 
         public override void ViewCreated()
         {
-            base.ViewCreated();
-            //ShowProgress = true;
+            base.ViewCreated(); 
         }
 
        
@@ -80,8 +73,7 @@ namespace BLEPractice.Core.ViewModels
         }
         private void OnStopScannCommand()
         {
-            _scanBLE.CancelScanning();
-            //Status += " Scanning Stoped";
+            _scanBLE.CancelScanning(); 
         }
 
 

@@ -1,24 +1,30 @@
 ﻿<Properties StartupConfiguration="{B52BC904-6C58-41C0-8EA1-F46819EB4C17}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BLEPractice.Droid/Resources/layout/activity_main.xml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BLEPractice.Droid/BLEService/BluetoothDeviceReceiver.cs">
     <Files>
       <File FileName="BLEPractice.Droid/Resources/layout/content_main.xml" Line="24" Column="17" />
-      <File FileName="BLEPractice.Droid/Resources/layout/activity_main.xml" Line="6" Column="50" />
-      <File FileName="BLEPractice.Core/ViewModels/MainPageViewModel.cs" />
+      <File FileName="BLEPractice.Droid/Resources/layout/activity_main.xml" Line="6" Column="51" />
+      <File FileName="BLEPractice.Core/ViewModels/MainPageViewModel.cs" Line="14" Column="78" />
+      <File FileName="BLEPractice.Droid/Views/MainPageView.cs" Line="37" Column="49" />
+      <File FileName="BLEPractice.Droid/BLEService/BluetoothDeviceReceiver.cs" Line="54" Column="1" />
+      <File FileName="BLEPractice.Abstractions/Interfaces/IBLECastReciver.cs" Line="7" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BLEPractice.Core" expanded="True">
+            <Node name="BLEPractice.Abstractions" expanded="True">
+              <Node name="Interfaces" expanded="True" />
+            </Node>
             <Node name="BLEPractice.Core" expanded="True">
               <Node name="ViewModels" expanded="True" />
             </Node>
             <Node name="BLEPractice.Droid" expanded="True">
-              <Node name="BLEService" expanded="True" />
+              <Node name="BLEService" expanded="True">
+                <Node name="BluetoothDeviceReceiver.cs" selected="True" />
+              </Node>
               <Node name="Properties" expanded="True" />
               <Node name="Resources" expanded="True">
-                <Node name="layout" expanded="True">
-                  <Node name="activity_main.xml" selected="True" />
-                </Node>
+                <Node name="layout" expanded="True" />
               </Node>
               <Node name="Views" expanded="True" />
             </Node>
@@ -33,8 +39,9 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Abstractions/Interfaces/MainActivityView.cs" relfile="BLEPractice.Abstractions/Interfaces/MainActivityView.cs" line="62" column="1" />
+      <Breakpoint file="/Users/dmn/Projects/BLEPractice.Core/BLEPractice.Core/ViewModels/MainPageViewModel.cs" relfile="BLEPractice.Core/ViewModels/MainPageViewModel.cs" line="26" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.BLEPractice.Droid AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.pixel_3a_q_10_0_-_api_29" />
+  <MonoDevelop.Ide.ItemProperties.BLEPractice.Droid AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.LDGNW18511008472" />
 </Properties>

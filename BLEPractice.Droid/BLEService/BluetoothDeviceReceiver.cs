@@ -12,6 +12,10 @@ namespace BLEPractice.Droid.BLEService
         public IBLECastReciver BLECastReciver { get; set; }
         private BluetoothManager _manager;
 
+        public BluetoothDeviceReceiver(IBLECastReciver receiver)
+        {
+            BLECastReciver = receiver;
+        }
 
         public override void OnReceive(Context context, Intent intent)
         {
@@ -27,9 +31,9 @@ namespace BLEPractice.Droid.BLEService
                     
                     if (device.BondState != Bond.Bonded)
                     {
-                        //if (device.Name != "" || device.Name !=  null)
+                        
                         if (!string.IsNullOrEmpty(device.Name))
-                        {
+                        {                            
                             BLECastReciver.AddDeviceRecived(new BLEDataItem(device.Name, device.Address));
                         }
                         
@@ -44,6 +48,13 @@ namespace BLEPractice.Droid.BLEService
                     //MainActivity.GetInstance().UpdateAdapterStatus("Discovery Finished.");
                     break;
             }
+        }
+
+
+
+        private void BindBLEViewModel()
+        {
+            throw new NotImplementedException();
         }
     }
 }

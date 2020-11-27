@@ -22,8 +22,7 @@ namespace BLEPractice.Droid.Views
         private BluetoothManager _manager;
         private bool _isReceiveredRegistered;
         private BLEScanService scanBlLEService;
-        //status
-        private string bleStatus;
+       
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -34,24 +33,21 @@ namespace BLEPractice.Droid.Views
 
             _manager = (BluetoothManager)Android.App.Application.Context.GetSystemService(Android.Content.Context.BluetoothService);
             _manager.Adapter.Enable();
-            _receiver = new BluetoothDeviceReceiver();
-
-
-            _receiver.BLECastReciver = ViewModel;
-
-            //status
-            bleStatus = _receiver.BLECastReciver.Status;
+            _receiver = new BluetoothDeviceReceiver(ViewModel as IBLECastReciver);
+            //_receiver.BLECastReciver = ViewModel;
+            //BindBLEViewModel();
             scanBlLEService = new BLEScanService();
 
             
             RegisterBluetoothReceiver();
 
             var set = this.CreateBindingSet<MainPageView, MainPageViewModel>();
-            set.Bind(SupportActionBar).For(v => v.Title).To(vm => vm.Title);
-            set.Bind(this).For(v => v.scanBlLEService).To(vm => vm.Status);
+            set.Bind(SupportActionBar).For(v => v.Title).To(vm => vm.Title); 
             set.Apply();
 
         }
+
+       
 
         private void RegisterBluetoothReceiver()
         {
@@ -65,18 +61,7 @@ namespace BLEPractice.Droid.Views
 
        
 
-        public void OnStartScanBLE(object sender, MvxValueEventArgs<bool> e)
-        {
-            
-            scanBlLEService.StartScanning();
-           
-        }
-
-        public void OnStopScanBLE()
-        {
-            scanBlLEService.CancelScanning();
-        }
-
+     
       
     }
 }
