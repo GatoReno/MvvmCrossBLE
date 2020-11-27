@@ -17,13 +17,14 @@ namespace BLEPractice.Core.ViewModels
         private readonly IScanBLE _scanBLE;
         public MvxObservableCollection<BLEDataItem> bleDataItems { get; set; }
 
-        private bool _showProgress;
-        public bool ShowProgress
-        {
-            get => _showProgress;
-            set => SetProperty(ref _showProgress, value);
-        }
-            
+        //private bool _showProgress;
+        //public bool ShowProgress
+        //{
+        //    get => _showProgress;
+        //    set => SetProperty(ref _showProgress, value);
+        //}
+
+        //status
         private string _blestatus;
         public string Status
         {
@@ -48,12 +49,13 @@ namespace BLEPractice.Core.ViewModels
             _scanBLE = scanBLEObject;
             StartScanning = new MvxCommand(OnStartScannCommand);
             StopScanning = new MvxCommand(OnStopScannCommand);
+            Title = "BLE Scanner";
         }
 
         public override void ViewCreated()
         {
             base.ViewCreated();
-            ShowProgress = true;
+            //ShowProgress = true;
         }
 
        

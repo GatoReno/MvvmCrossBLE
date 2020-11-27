@@ -22,6 +22,7 @@ namespace BLEPractice.Droid.Views
         private BluetoothManager _manager;
         private bool _isReceiveredRegistered;
         private BLEScanService scanBlLEService;
+        //status
         private string bleStatus;
         protected override void OnCreate(Bundle bundle)
         {
@@ -38,6 +39,7 @@ namespace BLEPractice.Droid.Views
 
             _receiver.BLECastReciver = ViewModel;
 
+            //status
             bleStatus = _receiver.BLECastReciver.Status;
             scanBlLEService = new BLEScanService();
 

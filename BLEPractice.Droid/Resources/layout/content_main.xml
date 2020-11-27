@@ -21,12 +21,14 @@
                 app:MvxBind="Click StartScanning"
                 android:layout_width="wrap_content"
                 android:elevation="10dp"
+                
                 android:layout_height="wrap_content"/>
 
             <android.support.design.widget.FloatingActionButton
                 app:MvxBind="Click StopScanning"
                 android:layout_width="wrap_content"
                 android:elevation="10dp"
+                app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" 
                 android:layout_marginLeft="16dp"
                 app:backgroundTint="@android:color/holo_red_dark"
                 android:layout_height="wrap_content"/>        
