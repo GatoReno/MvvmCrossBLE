@@ -19,7 +19,11 @@ namespace BLEPractice.Droid.BLEService
 
         public override void OnReceive(Context context, Intent intent)
         {
-            _manager = (BluetoothManager)Android.App.Application.Context.GetSystemService(Android.Content.Context.BluetoothService);
+            // attached BluetoothManager
+            _manager = (BluetoothManager)
+                Android.App.Application.Context.GetSystemService
+                (Android.Content.Context.BluetoothService);
+            // enable bluetooth in phisical device
             _manager.Adapter.Enable();
 
             var action = intent.Action;
@@ -52,9 +56,6 @@ namespace BLEPractice.Droid.BLEService
 
 
 
-        private void BindBLEViewModel()
-        {
-            throw new NotImplementedException();
-        }
+         
     }
 }

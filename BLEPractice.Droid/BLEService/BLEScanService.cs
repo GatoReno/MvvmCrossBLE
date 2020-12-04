@@ -8,13 +8,15 @@ namespace BLEPractice.Droid.BLEService
          
         public void CancelScanning()
         {
-            if (BluetoothDeviceReceiver.Adapter.IsDiscovering) BluetoothDeviceReceiver.Adapter.CancelDiscovery();
+            if (BluetoothDeviceReceiver.Adapter.IsDiscovering)
+                BluetoothDeviceReceiver.Adapter.CancelDiscovery();
 
         }
 
         public void StartScanning()
         {
-            if (!BluetoothDeviceReceiver.Adapter.IsDiscovering) BluetoothDeviceReceiver.Adapter.StartDiscovery();
+            if (!BluetoothDeviceReceiver.Adapter.IsDiscovering)
+                BluetoothDeviceReceiver.Adapter.StartDiscovery();
         }
     }
 }
